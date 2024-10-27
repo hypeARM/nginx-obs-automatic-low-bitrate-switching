@@ -583,6 +583,24 @@ For more details, refer to the [Xiu documentation](https://www.rustxiu.com/docs/
 
 ---
 
+### Using IrlHosting
+
+```JSON
+  "streamServer": {
+    "type": "Irlhosting",
+    "statsUrl": "http://localhost:8681/stats",
+    "application": "publish",
+    "key": "live",
+    "publisher": "publish/live/feed1"
+  },
+```
+
+- `statsUrl`: URL to IrlHosting stats page
+
+Note: `application`, `key` and `publisher` are optional fields. Use either `application` and `key` or `publisher`.
+
+---
+
 ### Using an OBS Source
 
 ```JSON
